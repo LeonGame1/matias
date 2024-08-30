@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ffafbd, #ffc3a0);
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+}
+
+.message h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.message p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff8f81;
+}
+
+/* Estilos para balões */
+.balloons {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.balloon {
+    width: 50px;
+    height: 70px;
+    background-color: #ff6f61;
+    border-radius: 50%;
+    margin: 10px;
+    position: absolute;
+    bottom: -200px;
+    animation: float 6s ease-in-out infinite;
+}
+
+.balloon1 {
+    background-color: #ff5f40;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.balloon2 {
+    background-color: #ff9f40;
+    left: 45%;
+    animation-delay: 2s;
+}
+
+.balloon3 {
+    background-color: #ffdf40;
+    left: 80%;
+    animation-delay: 4s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-300px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
